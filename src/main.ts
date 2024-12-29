@@ -83,11 +83,12 @@ export const main = async() => {
   });
 
   server.start({
-    transportType: "sse",
-    sse: {
-      endpoint: '/sse',
-      port: +(process.env.PORT || 3006)
-    }
+    transportType: "stdio",
+    // transportType: "sse",
+    // sse: {
+    //   endpoint: '/sse',
+    //   port: +(process.env.PORT || 3006)
+    // }
   });
 
 }
