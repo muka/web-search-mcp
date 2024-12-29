@@ -1,6 +1,7 @@
 services:
 
   web-search:
+    image: muka/web-search-mcp
     build:
       context: .
       dockerfile: Dockerfile
