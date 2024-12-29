@@ -1,0 +1,8 @@
+.env
+node_modules
+tmp
+.github
+.vscode
+Dockerfile
+docker-compose.yaml
+README.md

@@ -1,0 +1,11 @@
+services:
+
+  web-search:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3006:3006
+    environment:
+      - SERPER_API_KEY=your key
+      - PORT=3006

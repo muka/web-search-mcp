@@ -1,0 +1,14 @@
+version: '3'
+
+tasks:
+  qdrant-start:
+    deps: [qdrant-stop]
+    cmds:
+      - docker run -d --rm --name qdrant1 -p 6333:6333 qdrant/qdrant
+  qdrant-stop:
+    cmds:
+      - docker stop qdrant1 || true
+
+  docker-build:
+    cmds:
+      - docker compose build
